@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+	--primary-color: #ff5722;
+	--bg-primary: #fef6f9;
+	--footer-color: #020202;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--bg-primary);
+}
+
+header {
+	background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 69%)),
+		url(images/banner.jpg) center center;
+	height: 100vh;
+	width: 100%;
+	color: #fff !important;
+}
+
+header a {
+	color: #fff !important;
+	font-size: 1.2rem !important;
+	font-weight: 700 !important;
+}
+
+header nav li a:hover,
+header nav li a.active {
+	color: var(--primary-color) !important;
+}
+
+.btn-trigger {
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	transition: all ease-in-out 0.3s;
+}
+
+.btn-trigger:hover {
+	background-color: var(--primary-color);
+}
+
+.slogan-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20vh auto;
+}
+
+.slogan-part__title {
+	font-weight: 900;
+	font-size: 5rem;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.slogan-part a:hover {
+	background-color: #fff;
+	color: var(--primary-color) !important;
+	transition: all ease-in-out 0.3s;
+}
+
+#btn-search {
+	background-color: var(--primary-color);
+	border: none;
+	color: #fff;
+	transition: all ease-in-out 0.3s;
+}
+
+#btn-search:hover {
+	opacity: 0.7;
+}
+
+.menu-bar {
+	background-color: var(--primary-color);
+}
+
+.menu-bar span {
+	color: #fff;
+}
+
+@media (max-width: 992px) {
+	.slogan-part__title {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.slogan-part__title {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.slogan-part__title {
+		font-size: 2rem;
+	}
+}
