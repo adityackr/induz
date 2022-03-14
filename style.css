@@ -215,6 +215,14 @@ header nav li a.active {
 	.slogan-part__title {
 		font-size: 3rem;
 	}
+
+	.story__img {
+		display: none;
+	}
+
+	.story__desc {
+		margin-top: 0;
+	}
 }
 
 @media (max-width: 576px) {
