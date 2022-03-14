@@ -2,7 +2,7 @@
 
 :root {
 	--primary-color: #ff5722;
-	--bg-primary: #fef6f9;
+	--bg-primary: #f3f5f8;
 	--footer-color: #020202;
 }
 
@@ -125,6 +125,12 @@ header nav li a.active {
 
 .section__title--big {
 	font-weight: 900;
+	line-height: 1.2;
+}
+
+.section__desc {
+	font-size: 1.2rem;
+	opacity: 0.6;
 }
 
 .about ul li {
@@ -161,6 +167,29 @@ header nav li a.active {
 	transition: all ease-in-out 0.3s;
 }
 
+.story {
+	padding: 8rem 0;
+}
+
+.story__desc {
+	padding-left: 3rem;
+}
+
+.btn-read {
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 1.2rem;
+	margin-top: 0.3rem;
+	background-color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+}
+
+.btn-read:hover {
+	color: var(--primary-color);
+	background-color: #fff;
+	transition: all ease-in-out 0.3s;
+}
+
 @media (max-width: 1080px) {
 	.about {
 		margin-top: 0;
@@ -175,11 +204,23 @@ header nav li a.active {
 	.slogan-part__title {
 		font-size: 4rem;
 	}
+
+	.story__desc {
+		margin-top: 3rem;
+		padding-left: 0;
+	}
 }
 
 @media (max-width: 768px) {
 	.slogan-part__title {
 		font-size: 3rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.story {
+		max-width: 90%;
+		margin: auto;
 	}
 }
 
