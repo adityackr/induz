@@ -113,7 +113,7 @@ header nav li a.active {
 }
 
 .section__title span {
-	padding-left: 15px;
+	padding-left: 0.8rem;
 }
 
 .section__title span::before {
@@ -332,6 +332,53 @@ header nav li a.active {
 	font-weight: 700;
 }
 
+.newsletter {
+	background: linear-gradient(0deg, rgba(0 0 0 / 54%), rgba(0 0 0 / 69%)),
+		url(images/banner.jpg) center center fixed;
+	height: 60vh;
+	padding: 8rem 0;
+	color: #fff;
+	text-align: center;
+}
+
+.newsletter .section__title span::before {
+	display: inline;
+}
+
+.newsletter form {
+	margin: 2rem 0;
+}
+
+.newsletter form input {
+	width: 100%;
+	padding: 15px;
+	border: 2px solid;
+	border-radius: 8px;
+}
+
+.btn-input {
+	background-color: var(--primary-color);
+	font-size: 1rem;
+	font-weight: 700;
+	color: #fff;
+	border-color: var(--primary-color) !important;
+	transition: all ease-in-out 0.3s;
+}
+
+.btn-input:hover {
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.terms {
+	font-size: 1.2rem;
+}
+
+.terms a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
 @media (max-width: 1080px) {
 	.about {
 		margin-top: 0;
@@ -379,6 +426,11 @@ header nav li a.active {
 
 	.story__desc {
 		margin-top: 0;
+	}
+
+	.newsletter {
+		height: 80vh;
+		padding: 4rem 0;
 	}
 }
 
